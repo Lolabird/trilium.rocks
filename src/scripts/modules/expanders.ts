@@ -14,7 +14,7 @@
 export default function setupExpanders() {
     const expanders = Array.from(document.querySelectorAll("#menu .submenu-item"));
     for (const ex of expanders) {
-        ex.addEventListener("click", e => {
+        ex.addEventListener("mouseover", e => {
             if ((e.target as Element).closest(".submenu-item,.item") !== ex) return;
             e.preventDefault();
             e.stopPropagation();
