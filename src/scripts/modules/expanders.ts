@@ -14,8 +14,6 @@
 function setupExpanders() {
   const expanders = Array.from(document.querySelectorAll("#menu .submenu-item button"));
   for (const ex of expanders) {
-      console.log(ex.classList);
-      console.log(ex.parentElement.parentElement.classList);
     ex.addEventListener("click", (e) => {
       e.preventDefault();
       e.stopPropagation();
