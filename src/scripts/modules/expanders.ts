@@ -20,7 +20,7 @@ function setupExpanders() {
       const ul = ex.parentElement.parentElement;
       ul.style.height = `${ul.scrollHeight}px`;
       setTimeout(() => ul.classList.toggle("expanded"), 1);
-      setTimeout(() => ul.style.height = ``, 200);
+      setTimeout(() => ul.style.height = ``, 1);
     });
   }
 }
